@@ -23,6 +23,10 @@ spring:
 
   boot:
     refresh-message: last updated on 09/27/2025 7:55 pm IST. 
+
+  cloud:
+    bus:
+      enabled: true
   
 # Logging Configuration
 logging:
