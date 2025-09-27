@@ -15,6 +15,9 @@ spring:
     password: Vishwa@24                                              #${secret}
     #driver-class-name: com.mysql.cj.jdbc.Driver           # Optional—Spring Boot often auto-detects
 
+  boot:
+    refresh-message: config, refreshed on 09/27/2025 4:47 pm IST. 
+    
 server:
   port : 8081                                              # Optional—default is 8080
 
