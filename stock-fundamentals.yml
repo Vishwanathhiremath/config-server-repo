@@ -24,6 +24,11 @@ spring:
   boot:
     refresh-message: last updated on 09/27/2025 7:56 pm IST. 
     
+  cloud:
+    bus:
+      enabled: true
+      
+    
 server:
   port : 8081                                              # Optional—default is 8080
 
