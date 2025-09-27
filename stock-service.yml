@@ -22,7 +22,7 @@ spring:
     password: guest
 
   boot:
-    refresh-message: last updated on 09/27/2025 5:39 pm IST. 
+    refresh-message: last updated on 09/27/2025 5:45 pm IST. 
   
 # Logging Configuration
 logging:
