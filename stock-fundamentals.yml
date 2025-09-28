@@ -39,9 +39,9 @@ management:
       name: Stock Fundamentals Application
       description: Stock fundamentals Application for Fundamentals & Overview
       version: 1.0.0
-    tracing: 
-      sampling: 
-        probability: 1.0         # Sample 100% of requests for tracing
+  tracing: 
+    sampling: 
+      probability: 1.0         # Sample 100% of requests for tracing
 
   endpoints:
     web:
