@@ -28,7 +28,6 @@ spring:
     bus:
       enabled: true
       
-    
 server:
   port : 8081                                              # Optional—default is 8080
 
@@ -40,6 +39,9 @@ management:
       name: Stock Fundamentals Application
       description: Stock fundamentals Application for Fundamentals & Overview
       version: 1.0.0
+    tracing: 
+      sampling: 
+        probability: 1.0         # Sample 100% of requests for tracing
 
   endpoints:
     web:
@@ -58,8 +60,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
-
+      
+logging:
+  level:
+    org.springframework.web: DEBUG  # Enable detailed web logs
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"  # Enrich logs with trace/span IDs
 
 
 
