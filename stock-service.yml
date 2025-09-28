@@ -22,7 +22,7 @@ spring:
     password: guest
 
   boot:
-    refresh-message: last updated on 09/28/2025 2:27 pm IST. 
+    refresh-message: last updated on 09/28/2025 6:28 pm IST. 
 
   cloud:
     bus:
