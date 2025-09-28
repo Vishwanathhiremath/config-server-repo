@@ -53,7 +53,7 @@ management:
   endpoint:
     env:
       show-values: ALWAYS
-   tracing:
+  tracing:
     sampling:
       probability: 1.0  # Sample 100% of requests for tracing
 
