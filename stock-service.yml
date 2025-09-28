@@ -22,7 +22,7 @@ spring:
     password: guest
 
   boot:
-    refresh-message: last updated on 09/28/2025 6:28 pm IST. 
+    refresh-message: last updated on 09/28/2025 6:37 pm IST. 
 
   cloud:
     bus:
@@ -46,21 +46,23 @@ management:
       name: "Stock service Application"
       description: "Stock service Application for Stocks trading"
       version: "1.0.0"
+  health:
+    circuitbreaker:
+      enabled: true          
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: *
   endpoint:
     env:
       show-values: ALWAYS
     health: 
       show-details: ALWAYS
+      show-values: ALWAYS
   tracing:
     sampling:
       probability: 1.0  # Sample 100% of requests for tracing
-  health:
-    circuitbreaker:
-      enabled: true      
+  
 
 
 # Eureka Client Configuration
