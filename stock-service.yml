@@ -32,7 +32,10 @@ spring:
 logging:
   level:
     org.hibernate.SQL: DEBUG
+    org.springframework.web: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern: 
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"  # Enrich logs with trace/span IDs
 
 # Management Info
 management:
@@ -50,6 +53,10 @@ management:
   endpoint:
     env:
       show-values: ALWAYS
+   tracing:
+    sampling:
+      probability: 1.0  # Sample 100% of requests for tracing
+
 
 # Eureka Client Configuration
 eureka:
