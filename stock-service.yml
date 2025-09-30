@@ -22,7 +22,7 @@ spring:
     password: guest
     
   boot:
-    refresh-message: last updated on 10/01/2025 12.02 am IST. 
+    refresh-message: last updated on 10/01/2025 01.02 am IST. 
     
   cloud:
     bus:
@@ -83,7 +83,7 @@ resilience4j:
     instances: 
       stock-service: 
         registerHealthIndicator: true 
-        maxAttempts: 5
+        maxAttempts: 20
         waitDuration: 1s
         
       
