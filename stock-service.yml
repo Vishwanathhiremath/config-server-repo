@@ -3,7 +3,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+      show-sql: true
     properties:
       hibernate:
         format_sql: true
@@ -13,7 +13,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/stockSplice
     username: vishdev1
     password: Vishwa@24
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    #driver-class-name: com.mysql.cj.jdbc.Driver                  #spring boot autodetects
     
   rabbitmq:
     host: localhost
