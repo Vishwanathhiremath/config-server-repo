@@ -73,7 +73,7 @@ resilience4j:
       stock-service:
         registerHealthIndicator: true
         failureRateThreshold: 50
-        minimumNumberOfCalls: 5
+        minimumNumberOfCalls: 10
         automaticTransitionFromOpenToHalfOpenEnabled: true
         waitDurationInOpenState: 5s
         permittedNumberOfCallsInHalfOpenState: 3
@@ -84,7 +84,7 @@ resilience4j:
       stock-service: 
         registerHealthIndicator: true 
         maxAttempts: 10
-        waitDuration: 10s
+        waitDuration: 20s
         
       
 logging:
