@@ -83,8 +83,8 @@ resilience4j:
     instances: 
       stock-service: 
         registerHealthIndicator: true 
-        maxAttempts: 20
-        waitDuration: 1s
+        maxAttempts: 10
+        waitDuration: 10s
         
       
 logging:
