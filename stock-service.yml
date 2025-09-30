@@ -68,23 +68,23 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 resilience4j:
-  circuitbreaker:
-    instances:
-      stock-service:
-        registerHealthIndicator: true
-        failureRateThreshold: 50
-        minimumNumberOfCalls: 10
-        automaticTransitionFromOpenToHalfOpenEnabled: true
-        waitDurationInOpenState: 5s
-        permittedNumberOfCallsInHalfOpenState: 3
-        slidingWindowSize: 10
-        slidingWindowType: COUNT_BASED
+  #circuitbreaker:
+  #  instances:
+  #    stock-service:
+  #      registerHealthIndicator: true
+  #      failureRateThreshold: 50
+  #      minimumNumberOfCalls: 10
+  #      automaticTransitionFromOpenToHalfOpenEnabled: true
+  #      waitDurationInOpenState: 5s
+  #      permittedNumberOfCallsInHalfOpenState: 3
+  #      slidingWindowSize: 10
+  #      slidingWindowType: COUNT_BASED
   retry:
     instances: 
       stock-service: 
         registerHealthIndicator: true 
         maxAttempts: 10
-        waitDuration: 20s
+        waitDuration: 10s
         
       
 logging:
