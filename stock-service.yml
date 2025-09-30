@@ -7,13 +7,13 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.MySQLDialect
-        
+        dialect : org.hibernate.dialect.MySQLDialect        # Match your DB version
+
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/stockSplice
-    username: vishdev1
-    password: Vishwa@24
-    #driver-class-name: com.mysql.cj.jdbc.Driver                  #spring boot autodetects
+    url : jdbc:mysql://127.0.0.1:3306/stockSplice           # database name
+    username: vishdev1                                               #${root}
+    password: Vishwa@24                                              #${secret}
+    #driver-class-name: com.mysql.cj.jdbc.Driver           # Optional—Spring Boot often auto-detects
     
   rabbitmq:
     host: localhost
