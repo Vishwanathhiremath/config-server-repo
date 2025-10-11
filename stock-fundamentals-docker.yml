@@ -56,7 +56,7 @@ management:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: stock-fundamentals
     prefer-ip-address: false
     instance-id: ${spring.application.name}:${server.port}
   client:
