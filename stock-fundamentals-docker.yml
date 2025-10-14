@@ -11,8 +11,8 @@ spring:
 
   datasource:
     url : jdbc:mysql://mysql:3306/stockSplice?useSSL=false&allowPublicKeyRetrieval=true        #database name
-    #username: vishdev1                                               #${root}
-    #password: Vishwa@24                                              #${secret}
+    username: vishdev1                                               #${root}
+    password: Vishwa@24                                              #${secret}
     #driver-class-name: com.mysql.cj.jdbc.Driver           # Optional—Spring Boot often auto-detects
 
   rabbitmq:
