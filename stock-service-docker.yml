@@ -1,5 +1,10 @@
 spring:
 
+  config:
+    import: none
+    activate:
+      on-profile: docker
+      
   jpa:
     hibernate:
       ddl-auto: update
