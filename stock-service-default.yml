@@ -1,5 +1,9 @@
 spring:
 
+  config:
+    activate:
+      on-profile: default
+      
   jpa:
     hibernate:
       ddl-auto: update
