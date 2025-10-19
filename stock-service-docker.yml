@@ -1,7 +1,6 @@
 spring:
 
   config:
-    import: none
     activate:
       on-profile: docker
       
@@ -22,13 +21,12 @@ spring:
 
   rabbitmq:
     host: ${SPRING_RABBITMQ_HOST}
-    #host: localhost
     port: 5672
     username: guest
     password: guest
     
   boot:
-    refresh-message: last updated on ... loaded from docker profile 10/18/2025 00.00 am IST. 
+    refresh-message: last updated on ... loaded from docker profile 10/19/2025 01.45 pm IST. 
     
   cloud:
     bus:
